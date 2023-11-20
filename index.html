@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplikasi Grosir Manda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <!-- Splash screen -->
+    <div class="splash-screen">
+        <div class="splash-content">
+            <!-- Gambar untuk splash screen -->
+            <img src="splash.jpg" alt="Splash Image">
+        </div>
+    </div>
+
+    <!-- Konten utama halaman web -->
+    <div id="main-content" style="display: none;">
+        <!-- Isi halaman web utama -->
+        <!-- Semua konten utama Anda di sini -->
+    </div>
+    
+    <!-- Konten utama halaman web -->
+    <div id="main-content" style="display: none;">
+        <!-- Isi halaman web utama -->
+        <!-- Semua konten utama Anda di sini -->
+    </div>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Aplikasi Grosir Manda</h1>
+    </header>
+    <div class="container mt-4">
+        <!-- Form dan konten aplikasi -->
+
+        <div class="products-wrapper">
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="indomie.jpg" alt="Indomie Kuah" class="img-fluid img-frame">
+                    <p>Indomie Goreng</p>
+                    <p>Rp 110000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="beras.jpg" alt="Beras" class="img-fluid img-frame">
+                    <p>Beras berkualitas tinggi</p>
+                    <p>Rp 70000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="gula.jpg" alt="Gula Pasir" class="img-fluid img-frame">
+                    <p>Gula Pasir</p>
+                    <p>Rp 25000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="minyak.jpeg" alt="Minyak goreng" class="img-fluid img-frame">
+                    <p>Minyak Goreng 2L</p>
+                    <p>Rp 45000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="terigu.jpeg" alt="Tepung Terigu Segitiga Biru /kg" class="img-fluid img-frame">
+                    <p>Tepung Terigu Segitiga Biru /kg</p>
+                    <p>Rp 24000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="telur.jpeg" alt="Telur ayam negeri" class="img-fluid img-frame">
+                    <p>Telur Ayam Negeri /kg</p>
+                    <p>Rp 30000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="roti tawar.jpeg" alt="roti tawar" class="img-fluid img-frame">
+                    <p>Roti Tawar</p>
+                    <p>Rp 28000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="keju.jpeg" alt="keju" class="img-fluid img-frame">
+                    <p>Keju Craft</p>
+                    <p>Rp 22000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-info">
+                    <img src="susu kental manis.jpeg" alt="SKM" class="img-fluid img-frame">
+                    <p>Susu Kental Manis /renceng</p>
+                    <p>Rp 23000</p>
+                    <div class="product-buttons">
+                        <button class="btn btn-primary tambahButton" data-target="#formGrosir">Tambah</button>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tambahkan div product-container untuk produk lainnya disini -->
+        </div>
+
+        <!-- Form input dan tombol -->
+        <form id="formGrosir">
+            <!-- Form input dan tombol -->
+            <h2>Form Barang</h2>
+            <label for="namaBarang">Nama Barang:</label>
+            <input type="text" id="namaBarang" name="namaBarang" required><br><br>
+            <label for="jumlahBarang">Jumlah Barang:</label>
+            <input type="number" id="jumlahBarang" name="jumlahBarang" required><br><br>
+            <button type="submit" class="btn btn-primary">BELI</button>
+        </form>
+    </div>
+     <!-- Tabel untuk menampilkan hasil submit -->
+    <div class="container mt-4">
+        <h2>Daftar Belanja</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Jumlah Barang</th>
+                    <th>Total Bayar</th>
+                    <th>Aksi</th> <!-- Kolom untuk tombol Hapus -->
+                </tr>
+            </thead>
+            <tbody id="hasilSubmit">
+                <!-- Hasil submit akan ditambahkan di sini -->
+                <tr>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+
+    <!-- Element untuk menampilkan total pembayaran -->
+    <div id="totalBayar">
+        <h3>Total Yang Harus Bayar</h3>
+        <p id="totalBayarValue"></p>
+    </div>
+</div>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(function (registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(function (error) {
+                console.log('Service Worker registration failed:', error);
+            });
+    }
+
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+  
+</body>
+</html>

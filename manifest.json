@@ -1,0 +1,22 @@
+{
+  "name": "Aplikasi Grosir Manda",
+  "short_name": "Grosir Manda",
+  "description": "Membuat Aplikasi Drosir Sembako dengan javascript PWA",
+  "icons": [
+    {
+        "src": "images/logo512.jpg",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src": "images/logo512.jpg",
+        "sizes": "192x192",
+        "type": "image/png"
+    }
+],
+"start_url": "/",
+"display": "standalone",
+"theme_color": "#1F3641",
+"background_color": "#ffffff",
+"prefer_related_applications": false
+}
